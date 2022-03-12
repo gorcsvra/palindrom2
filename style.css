@@ -1,0 +1,88 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-family: "VT323", monospace;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". inputarea inputarea ."
+      ". lottie lottie ."
+      ". lottie lottie ."
+      ". success success ."
+      ". success success .";
+  }
+  .lottie {
+    grid-area: lottie;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+  }
+  .success {
+    grid-area: success;
+    margin-bottom: 0;
+    margin: auto;
+  }
+  .inputarea {
+    grid-area: inputarea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin: auto;
+  }
+  
+  #robot {
+    display: none;
+  }
+  
+   .grid-container * {
+    /* border: 1px solid red; */
+    position: relative;
+  } 
+  
+  .grid-container *:after {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #input {
+    display: flex;
+    flex-wrap: wrap;
+    height: 2rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-family: "VT323", monospace;
+  }
+  
+  #robotScreen {
+    position: absolute;
+    bottom: 7.25rem;
+    left: 14.9rem;
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #kudarc {
+    display: none;
+  }
+
+  #siker {
+    display: none;
+  }
+
+
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="negyedikbutton.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@500&family=VT323&display=swap"
+        rel="stylesheet">
+    <title>Negyedikpalindrom</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="inputarea">
+            <h1>PALINDROM VALIDÁTOR</h1>
+            <input type="text" name="palindrome" id="input" placeholder="Kérem a vizsgálandó szöveget!" />
+            <button onclick="toDisplay()" id="btn">VIZSGÁLAT</button>
+            <p id="result"></p>
+        </div>
+
+        <div class="lottie" id="robot">
+            <span id="robotScreen"></span>
+
+
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player id="robotLottie" src="https://assets6.lottiefiles.com/private_files/lf30_z2v8goc8.json"
+                background="transparent" speed="1" style="width:35rem; height:20rem ;"loop autoplay onclick="toDisplay()">
+            </lottie-player>
+        </div>
+        <div class="success">
+            <lottie-player id="kudarc" src="https://assets2.lottiefiles.com/packages/lf20_RWZde1.json"
+                background="transparent" speed="0.5" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player id="siker"src="https://assets8.lottiefiles.com/packages/lf20_4xuqhu9b.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
